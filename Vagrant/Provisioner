@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Aborta o script em caso de erro
+set -e
+
+# Desabilita o modo interativo do Ubuntu
+export DEBIAN_FRONTEND=noninteractive
+
+# Instala os pacotes
+apt-get -y -qq update
+apt-get -y -qq install git
+apt-get -y -qq install mailutils
+apt-get -y -qq install php5-cli
+apt-get -y -qq install php5-common
+apt-get -y -qq install php5-dev
+apt-get -y -qq install php5-xdebug
+apt-get -y -qq install postfix
+apt-get -y -qq install vim
